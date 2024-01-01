@@ -1,0 +1,83 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  background-color: hsl(212, 45%, 89%);
+  display: grid;
+  place-content: center;
+}
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.qr__card {
+  width: 32rem;
+  min-width: 32rem;
+  height: 49.8rem;
+  padding: 1.6rem 1.4rem;
+  border-radius: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 3rem 17px hsl(220, 25%, 79%);
+}
+.qr__card-img {
+  width: 28.9rem;
+  height: 28.9rem;
+}
+.qr__card-img img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.qr__card-info {
+  text-align: center;
+  width: 25rem;
+  margin: 2.5rem auto 0 auto;
+}
+.qr__card-title {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: hsl(218, 44%, 22%);
+  margin-block-end: 1.7rem;
+  font-weight: bold;
+}
+.qr__card-text {
+  line-height: 1.9rem;
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #000;
+}
+footer span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+footer span a {
+  text-decoration: none;
+  color: #fff;
+}
+footer span:visited, footer span::after {
+  color: #fff;
+}
